@@ -1,14 +1,33 @@
 
 package mosaicos;
 
+import java.io.IOException;
 import java.util.Scanner;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 import static mosaicos.Matriz.matriz;
 
 /**
  *
  * @author bryan
  */
-public class Mosaicos {
+public class Mosaicos extends Application {
+    public static int N, cx,cy;
+    //private static Stage window;
+    //private static Scene inicio;
+    public static Parent root;
+    
+    @Override
+    public void start(Stage primaryStage) throws IOException {   
+        
+        root = FXMLLoader.load(getClass().getResource("MosaicoView.fxml"));
+        Scene inicio = new Scene(root);
+        primaryStage.setScene(inicio);
+        primaryStage.show();
+    }
 
     public static void main(String[] args) {
         int n, x, y;
@@ -31,6 +50,9 @@ public class Mosaicos {
         
         
         Matriz m = new Matriz();
+        N=n;
+        cx=x;
+        cy=y;
         m.CreateMatriz(n,new Point(x,y));
         
         Tile t = new Tile();
@@ -38,6 +60,7 @@ public class Mosaicos {
         
         System.out.println("\n");
         m.imprimirMatriz(n);
+        launch(args);
     }
     
 }
