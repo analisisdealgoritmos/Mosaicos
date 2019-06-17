@@ -15,7 +15,12 @@ public class Matriz {
     //public Point p;
 
     public void CreateMatriz(int n ,Point p){
-        matriz = new int[n][n];
+        
+        int ln = 1;
+        while(ln<n)
+            ln*=2;
+        matriz = new int[ln][ln];
+        
         for(int i=0; i<n; i++){
             for(int j=0; j<n; j++){
                 if(i == p.getPx()  && j == p.getPy())

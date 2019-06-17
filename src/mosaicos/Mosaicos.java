@@ -35,9 +35,9 @@ public class Mosaicos extends Application {
         do{
             System.out.println("Ingrese el tamaño de la matriz nxn: ");
             n = input.nextInt();
-            if(n%2==1)
-                System.out.println("n debe ser par");
-        }while(n%2!=0);
+            if(n<2)
+                System.out.println("n debe ser mayor a 1");
+        }while(n<2);
         do{
             System.out.println("Ingrese coordenada x: ");
             x = input.nextInt();
@@ -53,10 +53,13 @@ public class Mosaicos extends Application {
         N=n;
         cx=x;
         cy=y;
-        m.CreateMatriz(n,new Point(x,y));
+        Point p1 = new Point();
+        p1.setPx(x);
+        p1.setPy(y);
+        m.CreateMatriz(n,p1);
         
         Tile t = new Tile();
-        t.Tile(n, new Point(0,0));
+        t.Tile();
         
         System.out.println("\n");
         m.imprimirMatriz(n);
