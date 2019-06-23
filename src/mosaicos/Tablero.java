@@ -67,143 +67,145 @@ public class Tablero{
             for(int j=0 ; j<600; j+=600/n){
                 x=i/(600/n);
                 y=j/(600/n);
-                gc.strokeRect(i, j, 600/n, 600/n);
+                gc.strokeRect(j, i, 600/n, 600/n);
+                
                 if(matriz[x][y]==2){ 
                     gc.setFill(Color.web(colores.get(1)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==3){
                     gc.setFill(Color.web(colores.get(2)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==4){
                     gc.setFill(Color.web(colores.get(3)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==5){
                     gc.setFill(Color.web(colores.get(4)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==6){
                     gc.setFill(Color.web(colores.get(5)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==7){
                     gc.setFill(Color.web(colores.get(6)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==8){
                     gc.setFill(Color.web(colores.get(7)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==9){
                     gc.setFill(Color.web(colores.get(8)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==10){
                     gc.setFill(Color.web(colores.get(9)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==11){
                     gc.setFill(Color.web(colores.get(10)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==12){
                     gc.setFill(Color.web(colores.get(11)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==1){ 
                     gc.setFill(Color.web(colores.get(12)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==13){
                     gc.setFill(Color.web(colores.get(13)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==14){
                     gc.setFill(Color.web(colores.get(14)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==15){
                     gc.setFill(Color.web(colores.get(15)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==16){
                     gc.setFill(Color.web(colores.get(16)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==17){
                     gc.setFill(Color.web(colores.get(17)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==18){
                     gc.setFill(Color.web(colores.get(18)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==19){
                     gc.setFill(Color.web(colores.get(19)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==20){
                     gc.setFill(Color.web(colores.get(20)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==21){
                     gc.setFill(Color.web(colores.get(21)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==22){
                     gc.setFill(Color.web(colores.get(22)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==12){ 
                     gc.setFill(Color.web(colores.get(23)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==23){
                     gc.setFill(Color.web(colores.get(24)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==24){
                     gc.setFill(Color.web(colores.get(25)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==25){
                     gc.setFill(Color.web(colores.get(26)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==26){
                     gc.setFill(Color.web(colores.get(27)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==27){
                     gc.setFill(Color.web(colores.get(28)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==28){
                     gc.setFill(Color.web(colores.get(29)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==29){
                     gc.setFill(Color.web(colores.get(29)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==30){
                     gc.setFill(Color.web(colores.get(30)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==31){
                     gc.setFill(Color.web(colores.get(31)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
-                else if(matriz[x][y]==0){
+                else if(matriz[x][y]==32){
                     gc.setFill(Color.web(colores.get(32)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
                 }
                 else if(matriz[x][y]==-1){
                     System.out.println(x+ " "+y+" "+matriz[x][y]);
                     gc.setFill(Color.web(colores.get(0)));
-                    gc.fillRect(i, j, 600/n, 600/n);
+                    gc.fillRect(j, i, 600/n, 600/n);
+                    System.out.println(i+" "+j);
                 }
             }
         }
