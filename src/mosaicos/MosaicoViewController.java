@@ -40,6 +40,11 @@ public class MosaicoViewController implements Initializable {
 
     @FXML
     private void graficar(ActionEvent event) {
+         
+        
+        
+        
+        
         Group r = new Group(); 
         Canvas canvas = new Canvas(600, 600);
         GraphicsContext gc = canvas.getGraphicsContext2D();
@@ -48,7 +53,10 @@ public class MosaicoViewController implements Initializable {
         Tablero t = new Tablero();
         t.Dibujar(N,gc);
         group.getChildren().add(canvas);
+        
        
     }
+    
+   
     
 }

@@ -47,6 +47,7 @@ public class Mosaicos extends Application {
             y = input.nextInt();
         }while(y<0 || y >=n);
         
+        long inicio = System.nanoTime();
         
         
         Matriz m = new Matriz();
@@ -63,7 +64,12 @@ public class Mosaicos extends Application {
         
         System.out.println("\n");
         m.imprimirMatriz(n);
+        long fin = System.nanoTime();
+        double dif = (double)(fin-inicio)*1.0e-9;
+        System.out.println("El programa demora: "+dif + "Segundos");
         launch(args);
+       
+        
     }
     
 }
